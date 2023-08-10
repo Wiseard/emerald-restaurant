@@ -1,0 +1,33 @@
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.765rem;
+}
+
+.btn-category {
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.btn-category:hover,
+.btn-category-active {
+  border-color: var(--color-golden);
+}
+
+@media screen and (max-width: 750px) {
+  .menu-buttons {
+    flex-direction: column;
+  }
+
+  .btn-category {
+    width: 200px;
+    margin: 0 auto;
+  }
+}

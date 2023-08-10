@@ -1,0 +1,88 @@
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background-color: transparent;
+  width: 100%;
+  z-index: 2;
+}
+
+/* logo */
+
+.logo {
+  text-align: center;
+}
+
+h1.logo-title {
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--color-golden);
+}
+
+h2.logo-subtitle {
+  font-size: 0.6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* links */
+
+.navigation-links {
+  display: flex;
+  gap: 0.765rem;
+}
+
+.navigation-links a {
+  font-weight: 200;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.navigation-links a:hover {
+  color: var(--color-golden);
+}
+
+/* active link */
+
+.active {
+  color: var(--color-golden);
+}
+
+/* menu button */
+
+.btn-menu {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  display: none;
+}
+
+.btn-menu:hover .menu-icon {
+  color: var(--color-golden);
+}
+
+.menu-icon {
+  color: var(--color-white);
+  transition: 0.3s;
+}
+
+/* NAVBAR RESPONSIVE */
+
+@media screen and (max-width: 1150px) {
+  .navigation-container {
+    padding: 1.5rem;
+  }
+
+  .navigation-links {
+    display: none;
+  }
+
+  .btn-menu {
+    display: grid;
+    place-items: center;
+  }
+}

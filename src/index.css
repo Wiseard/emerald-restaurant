@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* color */
+  --bg-black: #0a0b0a;
+  --color-white: #fff;
+  --color-grey: #d3d3d3;
+  --color-golden: #b7882d;
+
+  /* typography */
+  --letter-spacing: 1px;
+  --font-weight-light: 200;
+  --font-weight-medium: 300;
+  --font-weight-semi-bold: 400;
+  --font-weight-bold: 600;
+
+  /* font-family */
+  --font-family-normal: 'Poppins', sans-serif;
+}
+
+/* DEFAULT CSS */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(15px + 0.390625vw);
+  font-family: var(--font-family-normal);
+  color: var(--color-white);
+}
+
+body {
+  background-color: var(--bg-black);
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--color-white);
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--color-white);
+}
+
+a:visited {
+  color: var(--color-white);
+}
+
+h2 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+input,
+select,
+option,
+button {
+  font-family: var(--font-family-normal);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* REUSABLE COMPONENTS */
+/* containers */
+
+.container {
+  padding: 2.5rem 4rem;
+}
+.section {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+/* GENERAL RESPONSIVE */
+
+@media screen and (max-width: 1150px) {
+  .container {
+    padding: 2.5rem 1rem;
+  }
+}

@@ -1,0 +1,51 @@
+.staff {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.765rem;
+  justify-content: center;
+}
+
+.staff-member img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.member-info {
+  padding: 0.765rem 0;
+}
+
+.member-job {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--color-golden);
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.member-name {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-white);
+  margin-bottom: 0.4rem;
+}
+.member-text {
+  font-size: 0.7rem;
+  font-weight: 200;
+  color: var(--color-white);
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 750px) {
+  .staff {
+    grid-template-columns: 1fr;
+    padding: 0 3rem;
+    column-gap: 0em;
+    row-gap: 2.765rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .staff {
+    padding: 0 1rem;
+  }
+}

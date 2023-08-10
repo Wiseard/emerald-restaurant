@@ -1,0 +1,71 @@
+.location {
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 500px;
+  column-gap: 2.765rem;
+}
+
+.location-laguna {
+  position: relative;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/restaurant-laguna-beach.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: default;
+}
+.location-sanFrancisco {
+  position: relative;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/restaurant-san-francisco.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: default;
+}
+
+.location-info-container {
+  padding: 1rem;
+  background-color: #0a0b0ac0;
+  width: 100%;
+}
+
+.location-info-container h4 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.location-info {
+  align-items: center;
+  gap: 0.765rem;
+  margin-top: 0.765rem;
+}
+
+.location-info p {
+  font-size: 0.7rem;
+  font-weight: 200;
+  color: var(--color-white);
+}
+
+.location-icon {
+  font-size: 0.9rem;
+  color: var(--color-golden);
+}
+
+@media screen and (max-width: 650px) {
+  .location {
+    grid-template-columns: 1fr;
+    column-gap: 0rem;
+    row-gap: 2.765rem;
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .location {
+    padding: 0 1rem;
+  }
+}

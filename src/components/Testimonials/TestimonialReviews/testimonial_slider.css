@@ -1,0 +1,50 @@
+/* SLIDER */
+
+.swiper {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.swiper h4 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-white);
+  margin-bottom: 0.765rem;
+}
+
+.swiper p {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: var(--color-white);
+  margin-bottom: 0.2rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.swiper p:last-child {
+  font-size: 0.6rem;
+  font-weight: 200;
+  color: var(--color-grey);
+  margin-bottom: 0rem;
+}
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--color-white);
+  opacity: 1;
+}
+
+/* target all bullets */
+span.swiper-pagination-bullet {
+  background-color: var(--color-grey);
+  opacity: 1;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin: 1rem 0;
+}
+
+/* TESTIMONIALS RESPONSIVE */
+
+@media screen and (max-width: 1150px) {
+}

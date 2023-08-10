@@ -1,0 +1,45 @@
+.menu-content-container {
+  margin: 2.765rem 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.765rem;
+  row-gap: 0.765rem;
+}
+
+/* menu item */
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+h4.menu-item-title {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-white);
+}
+p.menu-item-price {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+p.menu-item-ingredients {
+  font-size: 0.6rem;
+  font-weight: 200;
+  color: var(--color-grey);
+}
+
+@media screen and (max-width: 750px) {
+  .menu-content-container {
+    padding: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu-content-container {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
