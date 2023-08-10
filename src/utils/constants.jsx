@@ -52,43 +52,73 @@ export const socialLinks = [
 export const hours = [
   {
     id: nanoid(),
+    name: '11:00 am',
+    value: [11, 0],
+  },
+  {
+    id: nanoid(),
+    name: '11:30 am',
+    value: [11, 30],
+  },
+  {
+    id: nanoid(),
     name: '12:00 pm',
-    value: '12',
+    value: [12, 0],
   },
   {
     id: nanoid(),
     name: '12:30 pm',
-    value: '12.30',
+    value: [12, 30],
   },
   {
     id: nanoid(),
-    name: '13:00 pm',
-    value: '13',
+    name: '01:00 pm',
+    value: [13, 0],
   },
   {
     id: nanoid(),
-    name: '13:30 pm',
-    value: '13.30',
+    name: '01:30 pm',
+    value: [13, 30],
   },
   {
     id: nanoid(),
     name: '07:00 pm',
-    value: '19',
+    value: [19, 0],
   },
   {
     id: nanoid(),
     name: '07:30 pm',
-    value: '19.30',
+    value: [19, 30],
   },
   {
     id: nanoid(),
     name: '08:00 pm',
-    value: '20',
+    value: [19, 0],
   },
   {
     id: nanoid(),
     name: '08:30 pm',
-    value: '20.30',
+    value: [20, 30],
+  },
+  {
+    id: nanoid(),
+    name: '09:00 pm',
+    value: [21, 0],
+  },
+  {
+    id: nanoid(),
+    name: '09:30 pm',
+    value: [21, 30],
+  },
+  {
+    id: nanoid(),
+    name: '10:00 pm',
+    value: [22, 0],
+  },
+  {
+    id: nanoid(),
+    name: '10:30 pm',
+    value: [22, 30],
   },
 ]
 

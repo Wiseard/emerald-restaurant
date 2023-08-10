@@ -12,6 +12,16 @@ const Form = () => {
   const [selectHour, setSelectHour] = useState('')
   const [book, setBook] = useState(false)
 
+  function disableHours(value) {
+    if (date.getHours() >= value[0] && value[1] === 0) {
+      return true
+    }
+    if (date.getHours() >= value[0] && date.getMinutes() >= value[1] === 0) {
+      return true
+    }
+
+    return false
+  }
   function onChangeHour(event) {
     const value = event.target.value
     setSelectHour(value)
@@ -132,7 +142,11 @@ const Form = () => {
         <option value="">Choose an hour</option>
         {hours.map(({ id, name, value }) => {
           return (
-            <option key={id} value={value} disabled={date.getHours() > value}>
+            <option
+              key={id}
+              value={value}
+              disabled={date.getHours() >= value[0] ? true : false}
+            >
               {name}
             </option>
           )
